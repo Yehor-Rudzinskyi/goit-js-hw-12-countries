@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+ul {
+  /* list-style: none; */
+  margin: 0%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
@@ -16,12 +21,45 @@ body {
   /*
    * CSS image reference example.
    */
-  background-image: url('./images/bg-pattern.png');
+  background-image: url('https://iea.imgix.net/817ded0e-7bb6-4b79-b425-65e6f7b705f1/shutterstock_1484419673.jpg?auto=compress%2Cformat&fit=min&q=80&rect=0%2C517%2C3840%2C1643&w=1800&h=770&fit=crop&fm=jpg&q=70&auto=format');
+  /* background-size: cover; */
+  color: rgb(17, 151, 212);
 }
 
-.main-div {
+span {
+  margin-top: 10px;
+}
+
+.main-div,
+.list_of_country {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.list_of_country,
+.div_country_list {
+  color: white;
+}
+
+.list_of_country {
+  list-style: none;
+}
+
+.div_country_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.language_link {
+  /* margin-left: 25px; */
+  padding-left: 20px;
+}
+
+#in {
+  outline: none;
+  border: none;
+  background-color: rgb(17, 151, 212);
+  border-bottom: 2px solid rgb(20, 20, 75);
 }
